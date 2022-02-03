@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-do List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href = "To-doList.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.2/underscore-esm-min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+        <script src="To-doList.js"></script>
+        <script>
+        </script>
+    </head>
+    <body>
+      <div class = "main-div">
+        <div class = "headers">
+          <h1>To-do List</h1>
+          <div class = "input-field">
+            <input type = "text" id = "add-tasks">
+            <button onclick="buttonClick()">Add</button>
+          </div>
+          <div class = "deleteAll" data-title = "Удалить все элементы" onclick="deleteAllClick()">
+            <img src ="svg/deleteAll.svg" id = "delete">
+          </div>
+        </div>
+        <div id = "content-page"></div>
+      </div>
+    </body>
+</html>
